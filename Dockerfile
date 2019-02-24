@@ -2,11 +2,12 @@
 FROM cypress/base:10
 RUN node --version
 RUN npm --version
-WORKDIR /home/node/app
+# WORKDIR /home/node/app
+WORKDIR /usr/src/app
 
 
 COPY package.json package-lock.json ./
-COPY app ./app
+# COPY app ./app
 
 
 COPY cypress.json cypress ./
