@@ -1,0 +1,98 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-02-24T17:23:50.926Z",
+    "end": "2019-02-24T17:23:58.319Z",
+    "duration": 7393,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "d3e31bc7-0bc2-478a-83f5-24e5801ef2f4",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "f9588426-cff9-45fd-b106-280c55a4b26f",
+        "title": "Test deploy jenkins pipeline",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "successfully jenkins build pipeline",
+            "fullTitle": "Test deploy jenkins pipeline successfully jenkins build pipeline",
+            "duration": 64,
+            "state": "passed",
+            "speed": "medium",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.expect(true).to.equal(true);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0bd656e6-84d8-4d3d-821b-58f9cc707fdb",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "faile jenkins build pipeline",
+            "fullTitle": "Test deploy jenkins pipeline faile jenkins build pipeline",
+            "duration": 5212,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.visit('https://www.google.com/');\ncy.url().should('match', /login/); // cy.expect(true).to.equal(false)",
+            "err": {
+              "message": "CypressError: Timed out retrying: expected 'https://www.google.com/' to match /login/",
+              "estack": "CypressError: Timed out retrying: expected 'https://www.google.com/' to match /login/\n    at Object.cypressErr (https://www.google.com/__cypress/runner/cypress_runner.js:65283:11)\n    at Object.throwErr (https://www.google.com/__cypress/runner/cypress_runner.js:65248:18)\n    at Object.throwErrByPath (https://www.google.com/__cypress/runner/cypress_runner.js:65275:17)\n    at retry (https://www.google.com/__cypress/runner/cypress_runner.js:58816:16)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:50924:18\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:127195:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:125213:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:125270:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:125315:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:125390:18)\n    at Async._drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:122119:16)\n    at Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:122129:10)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:122003:14)\n    at <anonymous>"
+            },
+            "isRoot": false,
+            "uuid": "fda1dc31-9321-417c-893d-27a697d67864",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0bd656e6-84d8-4d3d-821b-58f9cc707fdb"
+        ],
+        "failures": [
+          "fda1dc31-9321-417c-893d-27a697d67864"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 5276,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
