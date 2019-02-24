@@ -6,16 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "e2e": "cypress run",
-    "e2e:chrome": "cypress run --browser chrome",
-    "e2e:record": "cypress run --record",
-    "e2e:record:parallel": "cypress run --record --parallel",
-    "report": "cypress run --reporter mochawesome"
+    "e2e:re": "cypress run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "cypress": "^3.1.5",
-    "mocha": "^6.0.1"
+    "mocha": "^6.0.1",
+    "mochawesome": "^3.1.1",
+    "mochawesome-merge": "^1.0.5",
+    "mochawesome-report-generator": "^3.1.5"
   }
 }

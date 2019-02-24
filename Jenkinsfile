@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build and run test') {
       steps {
-        sh 'docker-compose up'
+        sh 'docker-compose up --build'
       }
     }
     // stage('Run test') {
