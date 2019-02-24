@@ -1,19 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build and run test') {
       steps {
-        echo 'Hello world!'
-        sh 'which docker-compose'
-        sh 'docker-compose --version'
         sh 'docker-compose up'
       }
     }
-    stage('Run') {
-      steps {
-        sh 'docker-compose build'
-      }
-    }
+    // stage('Run test') {
+    //   steps {
+    //     sh 'docker-compose build'
+    //   }
+    // }
   }
   environment {
      PATH = "$PATH:/usr/local/bin/"
