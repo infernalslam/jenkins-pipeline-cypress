@@ -8,11 +8,14 @@
     "e2e": "cypress run",
     "e2e:chrome": "cypress run --browser chrome",
     "e2e:record": "cypress run --record",
-    "e2e:record:parallel": "cypress run --record --parallel"
+    "e2e:record:parallel": "cypress run --record --parallel",
+    "report": "cypress run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^3.1.5"
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.1.5",
+    "mocha": "^6.0.1"
   }
 }
